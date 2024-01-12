@@ -11,4 +11,8 @@ export default defineNuxtConfig({
       publicDir: path.join(__dirname, '/docs')
     }
   },
+
+  app: {
+    baseURL: '/calorie-app',
+  },
 })
