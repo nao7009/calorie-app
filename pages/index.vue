@@ -9,8 +9,8 @@
             </p>
         </div>
         <div class="image">
-            <!-- <img src="~/assets/image/1533374951.png" alt="スタバの画像"> -->
-            <img src="/1533374951.png" alt="スタバの画像">
+            <img src="~/assets/image/1533374951.png" alt="スタバの画像">
+            <!-- <img src="/1533374951.png" alt="スタバの画像"> -->
         </div>
         <hr>
         <div class="drink">
