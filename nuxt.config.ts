@@ -15,4 +15,14 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/calorie-app',
   },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/scss/_variables.scss";',
+        },
+      },
+    },
+  },
 })

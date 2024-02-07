@@ -103,17 +103,6 @@
                         <option value="fewWhippedCream">ホイップクリーム追加（少なめ）</option>
                         <option value="nonWhippedCream">ノンホイップ</option>
                     </select>
-                    
-                    <!-- <input type="checkbox" id="" value="">
-                    <label for="">ホイップクリーム追加（通常）</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">ホイップクリーム追加（多め）</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">ホイップクリーム追加（少なめ）</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">ノンホイップ</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">ノンホイップ＋フォームミルク追加</label>         -->
                 </div>
                 <div class="customiseMenu">
                     <p>シロップ</p>
@@ -127,21 +116,6 @@
                         <option value="manySyrup">シロップ多め</option>
                         <option value="fewSyrup">シロップ少なめ</option>
                     </select>
-                    
-                    <!-- <input type="checkbox" id="" value="">
-                    <label for="">キャラメルフレーバーシロップ追加</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">バニラフレーバーシロップ追加</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">チョコレートフレーバーシロップ追加</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">ホワイトモカフレーバーシロップ追加</label>
-                    <input type="checkbox" id="" value="">
-                    <label for="">タゾチャイフレーバーシロップ追加</label> 
-                    <input type="checkbox" id="" value="">
-                    <label for="">シロップ多め</label> 
-                    <input type="checkbox" id="" value="">
-                    <label for="">シロップ少なめ</label>  -->
                 </div>
                 <div class="customiseMenu">
                     <p>エスプレッソショットの追加</p>
@@ -151,13 +125,6 @@
                         <option value="twoShot">2ショット追加</option>
                         <option value="threeShot">3ショット追加</option>
                     </select> 
-                    
-                    <!-- <input type="checkbox" id="" value="">
-                    <label for="">ショット追加</label> 
-                    <input type="checkbox" id="" value="">
-                    <label for="">2ショット追加</label> 
-                    <input type="checkbox" id="" value="">
-                    <label for="">3ショット追加</label>  -->
                 </div>
                 <div class="customiseMenu">
                     <p>ショットの変更</p>
@@ -165,9 +132,6 @@
                         <option value="">Please select</option>
                         <option value="wristletShot">リストレットショットへ変更</option>
                     </select>
-
-                    <!-- <input type="checkbox" id="" value="">
-                    <label for="">リストレットショットへ変更</label> -->
                 </div>
                 <div class="customiseMenu">
                     <p>エスプレッソの種類を変更</p>
@@ -175,8 +139,6 @@
                         <option value="">Please select</option>
                         <option value="decaf">ディカフェエスプレッソへ変更</option>
                     </select> 
-                    <!-- <input type="checkbox" id="" value="">
-                    <label for="">ディカフェエスプレッソへ変更</label> -->
                 </div>
                 <div class="customiseMenu">
                     <p>ソース</p>
@@ -186,11 +148,6 @@
                         <option value="caramelSauce">キャラメルソース追加</option>
                         <option value="chocolateSauce">チョコレートソース追加</option>
                     </select>
-
-                    <!-- <input type="checkbox" id="" value="">
-                    <label for="">ハチミツ（ドリンクの上にトッピング）</label>
-                    <label for="">キャラメルソース追加</label>
-                    <label for="">チョコレートソース追加</label> -->
                 </div>
                 <div class="customiseMenu">
                     <p>ミルク</p>
@@ -432,43 +389,93 @@ export default{
 
 body{
     background-color: #BEB4A7;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
 }
 
 .title{
-    h1, p{
+    h1{
         color: #2e3839;
         text-align: center;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 10px;
+        @include mq('max','md') {
+            margin: 5px;
+            font-size: 18px;
+        }
+        @include mq('max','sm') {
+        }
+    }
+    p{
+        color: #2e3839;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        margin: 10px;
+        @include mq('max','md') {
+            margin: 5px;
+            font-size: 12px;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .image{
     width: 200px;
     margin: 30px auto;
+    @include mq('max','md') {
+        width: 100px;
+        margin: 15px auto;    }
+    @include mq('max','sm') {
+    }
     img{
         width: 100%;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .drink{
     margin: 50px;
     text-align: center;
+    @include mq('max','md') {
+        margin: 20px;
+    }
+    @include mq('max','sm') {
+    }
     p{
         color: #2e3839;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .drinkTitle{
     text-align: center;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
     h2{
         color: #036242;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 5px;
+        @include mq('max','md') {
+            font-size: 15px;
+        }
+        @include mq('max','sm') {
+        }
     }
     p{
         color: #036242;
@@ -476,44 +483,89 @@ body{
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 5px;
+        @include mq('max','md') {
+            font-size: 10px;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .menu{
     display: flex;
     flex-wrap: wrap;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
 }
 
 .drinkMenu{
     width: 50%;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
     p{
         margin: 30px 0 5px;
+        @include mq('max','md') {
+            font-size: 10px;
+            margin: 15px 0 0;
+        }
+        @include mq('max','sm') {
+        }
     }
     select{
         margin: 10px;
         height: 30px;
         border-radius: 5px;
         text-align: center;
+        @include mq('max','md') {
+            margin: 5px;
+            height: 15px;
+            width: 150px;
+            font-size: 10px;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .customise{
     margin: 50px;
     text-align: center;
+    @include mq('max','md') {
+        margin: 20px;
+    }
+    @include mq('max','sm') {
+    }
     p{
         color: #2e3839;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .customiseTitle{
     text-align: center;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
     h2{
         color: #036242;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 5px;
+        @include mq('max','md') {
+            font-size: 15px;
+        }
+        @include mq('max','sm') {
+        }
     }
     p{
         color: #036242;
@@ -521,34 +573,72 @@ body{
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 5px;
+        @include mq('max','md') {
+            font-size: 10px;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .customiseMenu{
     width: 25%;
+    @include mq('max','md') {
+        width: 50%;
+    }
+    @include mq('max','sm') {
+    }
     p{
         margin: 30px 0 5px;
+        @include mq('max','md') {
+            font-size: 10px;
+            margin: 15px 0 0;
+        }
+        @include mq('max','sm') {
+        }
     }
     select{
         margin: 10px;
         height: 30px;
         border-radius: 5px;
         text-align: center;
+        @include mq('max','md') {
+            margin: 5px;
+            height: 15px;
+            width: 150px;
+            font-size: 10px;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
 .calorie{
     margin: 50px;
     text-align: center;
+    @include mq('max','md') {
+        margin: 20px;
+    }
+    @include mq('max','sm') {
+    }
 }
 
 .calorieTitle{
     text-align: center;
+    @include mq('max','md') {
+    }
+    @include mq('max','sm') {
+    }
     h2{
         color: #036242;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 5px;
+        @include mq('max','md') {
+            font-size: 15px;
+        }
+        @include mq('max','sm') {
+        }
     }
     p{
         color: #036242;
@@ -556,6 +646,11 @@ body{
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 5px;
+        @include mq('max','md') {
+            font-size: 10px;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
@@ -566,6 +661,10 @@ body{
         font-size: 35px;
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
+        @include mq('max','md') {
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
@@ -576,6 +675,11 @@ body{
         font-family: 'Work Sans', sans-serif;
         font-family: 'Zen Kaku Gothic New', sans-serif;
         margin: 50px auto;
+        @include mq('max','md') {
+            margin: 25px auto;
+        }
+        @include mq('max','sm') {
+        }
     }
 }
 
